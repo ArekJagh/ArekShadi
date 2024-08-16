@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - TheTechHeads</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">TheTechHeads</div>
+            <nav class="nav-links d-none d-lg-flex" id="nav-links">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Men</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Women</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Kids</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Sale</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Login</a></li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link text-white" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container my-5">
+        <h1 class="mb-4">Checkout</h1>
+
+        <div id="cart-items"></div>
+
+        <h3>Total: <span id="total-amount">$0.00</span></h3>
+
+        <button id="checkout-button" class="btn btn-primary mt-3">Proceed to Payment</button>
+    </main>
+
+    <footer class="mt-5 text-center">
+        <p>&copy; 2024 TheTechHeads, Inc. All Rights Reserved</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
