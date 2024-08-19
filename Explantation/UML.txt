@@ -1,0 +1,37 @@
++----------------+         +----------------+         +----------------+
+|    User        |         |    Product     |         |     Cart       |
++----------------+         +----------------+         +----------------+
+| -userID        |         | -productID     |         | -cartID        |
+| -username      |         | -name          |         | -userID        |
+| -password      |         | -description   |         | -items: List   |
+| -email         |         | -price         |         |                |
+| -address       |         | -size          |         |                |
+|                |         | -color         |         |                |
++----------------+         +----------------+         +----------------+
+        |                        |                           |
+        |                        |                           |
+        |                        |                           |
+        |                        |                           |
+        |                        |                           |
++-------+--------+       +-------+--------+         +----------------+
+|     Order      |       |    Admin       |         |   OrderItem    |
++----------------+       +----------------+         +----------------+
+| -orderID       |       | -adminID       |         | -orderItemID   |
+| -userID        |       | -username      |         | -productID     |
+| -orderDate     |       | -password      |         | -quantity      |
+| -totalAmount   |       |                |         | -price         |
+|                |       |                |         |                |
++----------------+       +----------------+         +----------------+
+        |
+        |
+        |
++----------------+
+|  PaymentInfo   |
++----------------+
+| -paymentID     |
+| -orderID       |
+| -amount        |
+| -paymentDate   |
+| -paymentMethod |
+|                |
++----------------+
